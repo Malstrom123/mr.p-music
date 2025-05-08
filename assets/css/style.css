@@ -6,14 +6,15 @@
 :root {
     --primary-font: "Cal Sans", sans-serif;
     --secondary-font: "Inter", cursive;
-    --primary-color: #ffffff; /* white */
-    --secondary-color: #ff0000; /* red */
-    --highlight-color: #ff0000; /* blue */
-    --highlight-color-light: #ff0000; /* light blue */
+    --primary-color: #3a2620; /* white */
+    --secondary-color: #aa9581; /* red */
+    --highlight-color: #416a8e; /* blue */
+    --highlight-color-light: #7a9fc2; /* light blue */
 }
 
 body {
     font-family: var(--primary-font);
+    background-color: black;
 }
 
 
@@ -49,7 +50,8 @@ body {
   
 body, html {
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: var(--primary-font), sans-serif;
+    color: white;
 }
   
 .video-background {
@@ -91,6 +93,7 @@ body, html {
 }
   
 .bottom-navbar ul {
+    color: white;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -108,5 +111,13 @@ body, html {
 .bottom-navbar a:hover {
     opacity: 0.7;
     transform: scale(1.2);
+}
+
+/* Buttons */
+
+.custom-bottom-filled {
+    border: 2px solid #fff;
+    background-color: var(--highlight-color);
+    color: white; 
 }
 
