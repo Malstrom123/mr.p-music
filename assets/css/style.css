@@ -121,8 +121,79 @@ body, html {
     color: white; 
 }
 
-/* Spotify Widgets */
+.btn {
+    padding: 0.3rem;
+    height: 38px;
+}
+
+/* Spotify Widgets / Music.html */
 
 .spotify-widget {
-    
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+.music-page {
+    padding-top: 100px;
+}
+
+.music-section {
+    display: flex;
+    justify-content: center; /* Centrera innehållet */
+    gap: 20px; /* Lägg till ett mellanrum mellan elementen (spotify widget och bild) */
+    align-items: center; /* Vertikalt centrera innehållet */
+    margin-bottom: 40px; /* Mellanrum mellan sektioner om flera musikklipp finns */
+}
+
+.music-image {
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+
+
+/* Small screens and up */
+@media screen and (min-width: 576px) {
+    /* increase font size in events table when screen size is large enough */
+    #events .table {
+        font-size: 1rem;
+    }
+    .student-discount {
+        font-size: 1rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    /* Make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 191px;
+    }
+}
+
+/* Large devices (small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+    /* Make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: auto;
+    }
+}
+
+/* xl devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    /* make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 220px;
+    }
+}
+
+/* xxl devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1400px) {
+    /* make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 195px;
+    }
 }
