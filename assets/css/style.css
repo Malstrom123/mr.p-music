@@ -6,15 +6,27 @@
 :root {
     --primary-font: "Cal Sans", sans-serif;
     --secondary-font: "Inter", cursive;
-    --primary-color: #3a2620; /* white */
+    --primary-color: #ffff; /* white */
     --secondary-color: #aa9581; /* red */
-    --highlight-color: #416a8e; /* blue */
+    --highlight-color: #ffffff; /* blue */
     --highlight-color-light: #7a9fc2; /* light blue */
 }
 
 body {
     font-family: var(--primary-font);
     background-color: black;
+    padding-top: 57.15px; /* pushes the top of the header down under fixed navbar */
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.section {
+    padding-top: 4rem; /* prevent navbar overlap */
 }
 
 
@@ -32,14 +44,12 @@ body {
     width: 50px;
 }
 
-/* Carousel item img 
+/* Carousel item img */
 
 .carousel-item img {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
-} */
+    height: 400px; /* Justera efter behov */
+    object-fit: contain;
+} 
 
 /* Se till att allt fyller hela skärmen */
 * {
@@ -55,13 +65,11 @@ body, html {
 }
   
 .video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
+    position: relative;         /* Gör så att videon flyttas med sidan */
     width: 100%;
+    height: 60vh;               /* T.ex. 60% av skärmhöjden */
     overflow: hidden;
-    z-index: -1;
+    z-index: 1;
 }
   
 .video-background video {
@@ -81,6 +89,10 @@ body, html {
 
 /* Footer / Navbar */
 
+.bottom-navbar input {
+    margin-right: 10px;
+}
+
 .bottom-navbar {
     position: fixed;
     bottom: 0;
@@ -89,7 +101,7 @@ body, html {
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    z-index: 100;
+    z-index: 1;
 }
   
 .bottom-navbar ul {
@@ -153,12 +165,29 @@ body, html {
     margin: 0 auto;
 }
 
+.bio img {
+    height: 400px; /* Justera efter behov */
+    object-fit: contain;
+}
+
+/* Social Media / icons */
+
+.social-links {
+    text-align: center;
+}
+
+.social-links a {
+    margin: 20px; /* Lägg till mellanrum mellan ikonerna */
+    font-size: 2rem;     /* Gör ikonerna större */
+    color: white;        /* Om du vill ha vit färg */
+    transition: transform 0.2s ease;
+}
 
 
 /* Small screens and up */
 @media screen and (min-width: 576px) {
     /* increase font size in events table when screen size is large enough */
-    #events .table {
+    .bottom-navbar {
         font-size: 1rem;
     }
     .student-discount {

@@ -19,12 +19,12 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="music-page d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100">
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/images/Mr.P logo navbar 50x50.png" alt="Boardwalk Games logo" class="logo">
+                <img src="assets/images/Mr.P logo navbar 50x50.png" alt="Mr.P logo" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,70 +33,100 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="music.html">Music</a>
+                        <a class="nav-link" href="music.html">Music</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#bio">Bio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="tour.html">Tour</a>
+                        <a class="nav-link" href="tour.html">Tour</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header>
+    <!-- Header with carousel -->
+    <header id="header" class="container section">
         <div class="row">
-            <div class="col-12 text-center">
-                <h1 class="display-3">Top 3 songs</h1>
-                <p class="lead display-6 sub-heading-color">Discover our most streamed songs!</p>
+            <div class="col-12 col-xl-6 text-center text-xl-start">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7yrTQE8SZP1sgDQZqrGt1N?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
+            <div class="col-12 col-xl-6">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/Mr.P - Mr. P.png" class="d-block w-100"
+                                alt="Cover art for the song Mr.P.">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-6 text-center text-xl-start">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3Gzn1MJIVLKzhoZNQ3oiOW?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="col-12 col-xl-6">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/Hög Musik.png" class="d-block w-100"
+                            alt="Cover art for the song Hög Musik.">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-6 text-center text-xl-start">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2hEXQMGPiXG5PM9uBlPBoL?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="col-12 col-xl-6">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/Ofrivilligt Nykterist.png" class="d-block w-100"
+                                alt="Cover art for the song Ofrivilligt Nykterist.">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <!-- On this link i found out how to get your spotify widget to your website https://www.youtube.com/shorts/Q026R5ONoTc -->
-    <main>
-        <div class="music-section d-flex">
-            <iframe class="spotify-widget" style="border-radius:12px" src="https://open.spotify.com/embed/track/7yrTQE8SZP1sgDQZqrGt1N?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <!-- main element to hold all key sections of the home page. It is not part of the grid structure -->
+    <main></main>
 
-            <img src="assets/images/Mr.P - Mr. P.png" alt="Cover art for Mr.P song" class="music-image d-block w-25">
-        </div>
-        <div class="music-section d-flex">
-            <iframe class="spotify-widget" style="border-radius:12px" src="https://open.spotify.com/embed/track/3Gzn1MJIVLKzhoZNQ3oiOW?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-            <img src="assets/images/Hög Musik.png" alt="Cover art for Hög musik song" class="music-image d-block w-25">
-        </div>
-        <div class="music-section d-flex">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2hEXQMGPiXG5PM9uBlPBoL?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-            <img src="assets/images/Ofrivilligt Nykterist.png" alt="Cover art for Ofrivilligt Nykterist song" class="music-image d-block w-25">
-        </div>
-    </main>
-
-    <!-- Footer / Navbar / Social-links -->
-    <footer class="bottom-navbar">
-        <form>
-            <div class="col-12 col-lg-4 mb-3">
-                <label for="email" class="form-label"></label>
-                <input id="email" type="email" class="form-control" name="email" required placeholder="enter your email">
+    <!-- Footer / contact section -->
+    <!-- mt-auto added to push footer to the bottom of the page -->
+    <footer id="contact" class="mt-auto">
+        <div class="container section">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="display-6">Social Media!</h2>
+                </div>
+                <!-- Contact info -->
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="social-links my-3">
+                        <a href="https://www.instagram.com/musicbymr.p/" target="_blank"
+                            aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"
+                            aria-label="Visit our Facebook page (opens in a new tab)" rel="noopener"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://open.spotify.com/artist/5K6cIE6i4ZIWFlrpzi2T5u?si=_qvyaLQlRJWAcEb5-O9JlA" target="_blank" aria-label="Visit our X feed (opens in a new tab)"
+                            rel="noopener"><i class="fa-brands fa-spotify"></i></a>
+                        <a href="http://www.youtube.com/@mr.p-jofa" target="_blank"
+                            aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@jofa.mitt.i.maten" target="_blank"
+                            aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><i
+                                class="fa-brands fa-tiktok"></i></a>    
+                    </div>
+                </div>
             </div>
-            <div class="col-12">
-                <button type="submit" class="btn custom-button-filled">Submit</button>
-            </div>
-        </form>
-        <nav>
-          <ul>
-            <li><a href="https://www.instagram.com/musicbymr.p/" target="_blank" aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://open.spotify.com/artist/5K6cIE6i4ZIWFlrpzi2T5u?si=_qvyaLQlRJWAcEb5-O9JlA" target="_blank"aria-label="Visit our Spotify page (opens in a new tab)" rel="noopener"><i class="fa-brands fa-spotify"></i></a></li>
-            <li><a href="http://www.youtube.com/@mr.p-jofa" target="_blank" aria-label="Visit our Youtube page (opens in a new tab)" rel="noopener"><i class="fa-brands fa-youtube"></i></a></li>
-            <li><a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook page (opens in a new tab)" rel="noopener"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://www.tiktok.com/@jofa.mitt.i.maten" target="_blank" aria-label="Visit our Tiktok page (opens in a new tab)" rel="noopener"><i class="fa-brands fa-tiktok"></i></a></li>
-          </ul>
-        </nav>
-      </footer>
+        </div>
+    </footer>
 
     
     

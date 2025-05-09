@@ -20,11 +20,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <div class="video-background">
-        <video autoplay muted loop playsinline>
-            <source src="assets/video/X-cruise Video.mp4" type="video/mp4">
-        </video>
-    </div>
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container">
@@ -49,40 +44,98 @@
                     <li class="nav-item">
                         <a class="nav-link" href="tour.html">Tour</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="booking.html" class="btn custom-button-filled ms-lg-3">Tickets</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main>
-        <!-- Bio section -->
-         
-    </main>
-
-    <!-- Footer / Navbar / Social-links -->
-    <footer class="bottom-navbar">
-        <form>
-            <div class="d-flex mb-4">
-                <div data-mdb-input-init class="form-outline me-3" style="width: 12rem">
-                    <input type="text" id="form1" class="form-control" placeholder="Enter your email" />
-                    <label class="form-label" for="form1"></label>
-                </div>
-                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm">Subscribe</button>
+    <!-- Header with carousel -->
+    <header id="header" class="container section">
+        <div class="row">
+            <div class="col-12 col-xl-6 text-center text-xl-start">
+                <h1 class="display-3">Mr.P</h1>
+                <p class="lead display-6 sub-heading-color">Your next adventure is waiting!</p>
+                <p class="my-4">Welcome to Boardwalk Games, Your Ultimate Gaming Getaway! Escape into the world of board
+                    games and
+                    café delights. Whether you're a casual gamer seeking a cosy nook to unwind, a board game enthusiast
+                    ready for your next challenge, or a student gamer looking for a fun, affordable hangout, we've got
+                    you covered.</p>
             </div>
-        </form>
-        <nav>
-          <ul>
-            <li><a href="https://www.instagram.com/musicbymr.p/" target="_blank" aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://open.spotify.com/artist/5K6cIE6i4ZIWFlrpzi2T5u?si=_qvyaLQlRJWAcEb5-O9JlA" target="_blank"aria-label="Visit our Spotify page (opens in a new tab)" rel="noopener"><i class="fa-brands fa-spotify"></i></a></li>
-            <li><a href="http://www.youtube.com/@mr.p-jofa" target="_blank" aria-label="Visit our Youtube page (opens in a new tab)" rel="noopener"><i class="fa-brands fa-youtube"></i></a></li>
-            <li><a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook page (opens in a new tab)" rel="noopener"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://www.tiktok.com/@jofa.mitt.i.maten" target="_blank" aria-label="Visit our Tiktok page (opens in a new tab)" rel="noopener"><i class="fa-brands fa-tiktok"></i></a></li>
-          </ul>
-        </nav>
-      </footer>
+            <div class="col-12 col-xl-6">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/mr.p x-cruise 1.JPG" class="d-block w-100"
+                                alt="The inside of Boardwalk Games with bookshelves filled with boardgames, and wooden tables to play at">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/mr.p x-cruise 2.JPG" class="d-block w-100"
+                                alt="The inside of Boardwalk Games with bookshelves filled with boardgames, and wooden tables to play at">
+                        </div>
+                    </div>
+                    <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main element to hold all key sections of the home page. It is not part of the grid structure -->
+     <main>
+        <section id="bio" class="container section">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-6 text-center">Bio</h2>
+                </div>
+
+                <div class="col-12 col-xl-6">
+                    <img src="assets/images/mr.p x-cruise 3.jpg" class="d-block w-100" alt="A pictur when we are performing">
+                </div>
+                <div class="col-12 col-xl-6">
+                    <p>Mr.P & Jofa is a Swedish music and comedy group formed in 2021 in Värmland. Since the beginning, we have written and produced our own songs. A key part of the group’s concept is to reflect on and poke fun at stories we’ve experienced. Mr.P & Jofa is one of Sweden’s biggest EPA-dunk acts and is booked all over the country. The group has now surpassed 24 million streams across all platforms and has sold out clubs and their own live performances.</p>
+                </div>
+            </div>
+        </section>
+     </main>
+
+    <!-- Footer / contact section -->
+    <!-- mt-auto added to push footer to the bottom of the page -->
+    <footer id="contact" class="mt-auto">
+        <div class="container section">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="display-6">Social Media!</h2>
+                </div>
+                <!-- Contact info -->
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="social-links my-3">
+                        <a href="https://www.instagram.com/musicbymr.p/" target="_blank"
+                            aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"
+                            aria-label="Visit our Facebook page (opens in a new tab)" rel="noopener"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://open.spotify.com/artist/5K6cIE6i4ZIWFlrpzi2T5u?si=_qvyaLQlRJWAcEb5-O9JlA" target="_blank" aria-label="Visit our X feed (opens in a new tab)"
+                            rel="noopener"><i class="fa-brands fa-spotify"></i></a>
+                        <a href="http://www.youtube.com/@mr.p-jofa" target="_blank"
+                            aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@jofa.mitt.i.maten" target="_blank"
+                            aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><i
+                                class="fa-brands fa-tiktok"></i></a>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     
     
