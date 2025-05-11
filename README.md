@@ -96,7 +96,7 @@ The website should feel like you're experiencing a live show.
 
 ![Mobile/Tablet/Laptop](https://github.com/Malstrom123/mr.p-music/blob/ddcf4a15644b105a4344190e85a43814ef121670/Bio.png)
 
-![Mobile/Tablet/Laptop]
+![Mobile/Tablet/Laptop](https://github.com/Malstrom123/mr.p-music/blob/c477523dbff3c76ce5b66da96f2e1308e5abe371/Booking.png)
 
 ![Mobile/Tablet/Laptop]
 
