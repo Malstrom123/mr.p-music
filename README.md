@@ -100,7 +100,7 @@ The website should feel like you're experiencing a live show.
 
 ![Mobile/Tablet/Laptop](https://github.com/Malstrom123/mr.p-music/blob/83e39d4b619d4ceb78e020bff5566e2e4ba20dfd/Home.png)
 
-![Mobile/Tablet/Laptop]
+![Mobile/Tablet/Laptop](https://github.com/Malstrom123/mr.p-music/blob/6940d3f634d17df8d432e3f73a53c2aae2c322d7/Music.png)
 
 ![Mobile/Tablet/Laptop]
 
