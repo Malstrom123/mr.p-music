@@ -94,7 +94,7 @@ The website should feel like you're experiencing a live show.
 
 ### Wireframes
 
-![Mobile/Tablet/Laptop]
+![Mobile/Tablet/Laptop](https://github.com/Malstrom123/mr.p-music/blob/ddcf4a15644b105a4344190e85a43814ef121670/Bio.png)
 
 ![Mobile/Tablet/Laptop]
 
