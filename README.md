@@ -15,15 +15,12 @@
 
 4. [**Testing**](#testing)
 
-5. [**Deployment**](#deployment)
-    - [**How to run this project locally**](#how-to-run-this-project-locally)
-
-6. [**Credits**](#credits)
+5. [**Credits**](#credits)
     - [**Content**](#content)
     - [**Media**](#media)
     - [**Code**](#code)
 
-7. [**Disclaimer**](#disclaimer)
+6. [**Disclaimer**](#disclaimer)
 
 ## UX
 
