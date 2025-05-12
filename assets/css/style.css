@@ -193,14 +193,14 @@ body.tour-page {
         font-size: 1.2rem;
     }
 
-    /* Se till att navigeringen (menyn) är användarvänlig */
+    /* Make sure the navigation (menu) is easy to use. */
     #navbar {
         flex-direction: column;
         text-align: center;
     }
 
     .social-links a {
-        font-size: 1.5rem; /* Gör ikonerna lite mindre för mindre enheter */
+        font-size: 1.5rem; 
     }
 
     .bottom-navbar ul {
@@ -209,18 +209,17 @@ body.tour-page {
     }
 
     .carousel-item img {
-        height: 300px; /* Anpassa bildstorleken för små skärmar */
+        height: 300px; 
     }
 
     .music-section {
-        flex-direction: column; /* Gör musikutdelningen vertikal på små enheter */
+        flex-direction: column; 
     }
 
     .music-image {
-        width: 100%; /* Gör bilderna responsiva */
+        width: 100%; 
     }
 
-    /* Ytterligare justeringar för text och layout */
     .content {
         padding-top: 10%;
     }
@@ -237,20 +236,20 @@ body.tour-page {
     }
 
     .social-links a {
-        font-size: 2rem; /* Lite större ikoner för tablets */
+        font-size: 2rem; /* Slightly larger icons for tablets. */
     }
 
     .carousel-item img {
-        height: 350px; /* Justera bildstorlek för tabletter */
+        height: 350px; /* Adjust image size for tablets. */
     }
 
-    /* Kolumnerna i musikutdelningen kan vara horisontella */
+    /* The columns in the music section can be horizontal. */
     .music-section {
-        flex-direction: row; /* Horisontell visning för musikklippen */
+        flex-direction: row;
     }
 
     .music-image {
-        width: 80%; /* Bilderna tar mer plats än på små skärmar */
+        width: 80%; /* The images take up more space than on smaller screens. */
     }
 }
 
